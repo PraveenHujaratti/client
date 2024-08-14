@@ -1,6 +1,5 @@
 
 import './App.css';
-import Content from './components/content.js/content';
 import style from './assets/css/style.css'
 import Login from './components/login/login';
 
