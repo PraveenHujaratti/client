@@ -1,0 +1,155 @@
+:root {
+    --white: #ffffff;
+    --yellow: #F2BA1D;
+    --blue: #08183A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -----Login------ */
+.login-bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/login-bg.jpg');
+    background-position: center;
+
+}
+
+.overlay-bg {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrap {
+    width: 70%;
+    height: 70%;
+    background-color: #ffffff;
+    z-index: 10;
+    border-radius: 10px;
+    display: flex;
+}
+
+.login-image {
+    flex-grow: 10;
+
+    position: relative;
+}
+
+.login-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.login-form-wrap {
+    flex-grow: 2;
+    padding: 60px 20px;
+    text-align: left;
+}
+
+.login-title {
+    margin-bottom: 40px;
+}
+
+.login-title h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.login-title p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* ---Header--- */
+.header {
+    width: 100%;
+    /* height: 50px; */
+    padding: 20px 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.header .header-items-wrap .header-list-1,
+.header .header-items-wrap .header-list-2 {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 2;
+    /* background-color: red; */
+}
+
+.header .header-items-wrap .header-list-1 li,
+.header .header-items-wrap .header-list-2 li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.header .header-items-wrap .header-list-1 li span {
+    color: var(--yellow);
+}
+
+.header-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ------main container---- */
+.body-container {
+    display: flex;
+    gap: 50px;
+}
+
+.left-panel {
+    flex-grow: 1;
+    height: calc(100vh - 72px);
+    background-color: var(--blue);
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.left-panel-items {
+    list-style-type: none;
+
+}
+
+.left-panel-items li {
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.left-panel-items li:hover {
+    background-color: var(--yellow);
+    color: var(--blue);
+}
+
+.right-panel {
+    flex-grow: 10;
+}
+
+/* ------right panel----- */
+.options .input-option input {
+    padding: 10px 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
